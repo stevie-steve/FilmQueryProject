@@ -20,27 +20,30 @@ public class Film {
 	private double replacementCost;
 	private String rating;
 	private String specialFeatures;
+	private List<Actor> actors;
 	
-	
-	
-	public Film(int id, String title, String description, Integer releaseYear, int languageId, int rentalDuration,
-			double rentalRate, Integer length, double replacementCost, String rating, String specialFeatures) {
-		super();
-		this.id = id;
-		this.title = title;
-		this.description = description;
-		this.releaseYear = releaseYear;
-		this.languageId = languageId;
-		this.rentalDuration = rentalDuration;
-		this.rentalRate = rentalRate;
-		this.length = length;
-		this.replacementCost = replacementCost;
-		this.rating = rating;
-		this.specialFeatures = specialFeatures;
-	}
+//	public Film(int id, String title, String description, Integer releaseYear, int languageId, int rentalDuration,
+//			double rentalRate, Integer length, double replacementCost, String rating, String specialFeatures) {
+//		super();
+//		this.id = id;
+//		this.title = title;
+//		this.description = description;
+//		this.releaseYear = releaseYear;
+//		this.languageId = languageId;
+//		this.rentalDuration = rentalDuration;
+//		this.rentalRate = rentalRate;
+//		this.length = length;
+//		this.replacementCost = replacementCost;
+//		this.rating = rating;
+//		this.specialFeatures = specialFeatures;
+//	}
 	public Film(int filmId, String title2, String desc, short releaseYear2, int langId, int rentDur, double rate,
 			int length2, double repCost, String rating2, String features) {
 		// TODO Auto-generated constructor stub
+		//write the guts 
+	}
+	public Film() { //my doing
+	
 	}
 	public int getId() {
 		return id;
@@ -107,6 +110,14 @@ public class Film {
 	}
 	public void setSpecialFeatures(String specialFeatures) {
 		this.specialFeatures = specialFeatures;
+	}
+	
+	public List<Actor> getActors() {
+		return actors;
+	}
+
+	public void setActors(List<Actor> actors) {
+		this.actors = actors;
 	}
 	@Override
 	public int hashCode() {
@@ -204,10 +215,10 @@ public class Film {
 		builder.append(rating);
 		builder.append(", specialFeatures=");
 		builder.append(specialFeatures);
+		builder.append(", actors=");
+		builder.append(actors);
 		builder.append("]");
 		return builder.toString();
 	}
-	
-	
 
 }
