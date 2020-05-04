@@ -1,4 +1,4 @@
-# BLACKJACK! Homework Assignment
+# FILM QUERY Homework Assignment
 
 ### Overview
 This program allows a user to interact with a wide range of information available through SQL databases.
