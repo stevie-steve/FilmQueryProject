@@ -10,9 +10,13 @@ The menu will properly loop until the user decides to quit the application by ch
 ### Applications Used
 
  GitHub/git  
+
  Eclipse
+
  Java   
+
  Terminal
+
  SQL
 
 ### Lessons Learned
